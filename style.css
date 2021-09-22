@@ -1,7 +1,52 @@
 .list_descriptions dt{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 .list_descriptions dd{
     margin-bottom: 10px;
 }
+/*Немного поигрался)*/
+.list_descriptions dd>pre>code{
+    font-size: 20px;
+}
+p {
+    color: green;
+    font-weight: 700;
+}
+.text{
+    color: blue;
+}
+.text-alert{
+    color: red;
+}
+#text_id{
+    color: blueviolet;
+}
+.block_practice .text-4{
+    color: brown;
+}
+.block_practice>.text-5{
+    color: coral;
+}
+.block_practice .text-5 + .text{
+    color:cornflowerblue;
+}
+.block_practice .text-6 ~ .text{
+    color: darkkhaki;
+}
+.block_practice .text:last-child{
+    color: darkred;
+}
+.block_practice .text:nth-child(9){
+    color: deeppink;
+}
+.text-10{
+    color:yellow !important;
+}
+.block_practice p:hover, .block_practice .text:hover, #text_id:hover{
+    color: black;
+}
+.text-10:hover{
+    color:black !important;
+}
+

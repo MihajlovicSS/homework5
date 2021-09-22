@@ -15,56 +15,79 @@
     </header>
     <main>
         <h1>Какие бывают селекторы?</h1>
+        <h2>Теория</h2>
         <dl class="list_descriptions">
             <dt>Универсальные</dt>
             <dd>
-                <pre><code>* {font-size: 16px;}</code></pre> - будут выбраны все элементы на странице и к ним применены стили
+                <pre><code>* {font-size: 16px;}</code></pre> - будут выбраны все элементы на странице и к ним применены
+                стили
             </dd>
             <dt>Селекторы по тэгам</dt>
             <dd>
-                <pre><code>h1 {color: red;}</code></pre> - будут выбраны все тэги <code>&lt;h1&gt;</code> и к ним применены стили</dd>
+                <pre><code>h1 {color: red;}</code></pre> - будут выбраны все тэги <code>&lt;h1&gt;</code> и к ним
+                применены стили
+            </dd>
             <dt>Селекторы по классам</dt>
             <dd>
-                <pre><code>.class {background-color: #99ffcc;}</code></pre> - будут выбраны все тэги, имеющие класс <code>.class</code>, и к ним применены стили
+                <pre><code>.class {background-color: #99ffcc;}</code></pre> - будут выбраны все тэги, имеющие класс
+                <code>.class</code>, и к ним применены стили
             </dd>
             <dt>Селекторы по идентификатору</dt>
             <dd>
-                <pre><code>#identificator {font-size: 35px;}</code></pre> - будут выбраны все тэги, имеющие идентификатор <code>#identificator</code>, и к ним применены стили
+                <pre><code>#identificator {font-size: 35px;}</code></pre> - будут выбраны все тэги, имеющие
+                идентификатор <code>#identificator</code>, и к ним применены стили
             </dd>
             <dt>Внутренние селекторы</dt>
             <dd>
-                <pre><code>.class p {padding: 15px;}</code></pre> - будут выбраны все тэги <code>&lt;p&gt;</code>, которые лежат внутри тэгов с классов <code>class</code>, и к ним применены стили
+                <pre><code>.class p {padding: 15px;}</code></pre> - будут выбраны все тэги <code>&lt;p&gt;</code>,
+                которые лежат внутри тэгов с классов <code>class</code>, и к ним применены стили
             </dd>
             <dt>Дочерние селекторы</dt>
             <dd>
-                <pre><code>.class>p {padding: 15px;}</code></pre> - будут выбраны все тэги <code>&lt;p&gt;</code>, которые находятся на первом уровне вложенности в тэги с классом <code>class</code>
+                <pre><code>.class>p {padding: 15px;}</code></pre> - будут выбраны все тэги <code>&lt;p&gt;</code>,
+                которые находятся на первом уровне вложенности в тэги с классом <code>class</code>
             </dd>
             <dt>Соседние селекторы</dt>
             <dd>
-                <pre><code>h1 + p {font-size: 30px;}</code></pre> - будет выбран тэг <code>&lt;p&gt;</code>, который следует сразу за тэгом <code>&lt;h1&gt;</code>, и к нему применены стили
+                <pre><code>h1 + p {font-size: 30px;}</code></pre> - будет выбран тэг <code>&lt;p&gt;</code>, который
+                следует сразу за тэгом <code>&lt;h1&gt;</code>, и к нему применены стили
             </dd>
             <dt>Родственные селекторы</dt>
             <dd>
-                <pre><code>h1 ~ p {color: red;}</code></pre> - будут выбраны все тэги <code>&lt;p&gt;</code>, которые следуют сразу после тэгов <code>&lt;h1&gt;</code>(их может быть несколько), и к ним применены стили
+                <pre><code>h1 ~ p {color: red;}</code></pre> - будут выбраны все тэги <code>&lt;p&gt;</code>, которые
+                следуют сразу после тэгов <code>&lt;h1&gt;</code>(их может быть несколько), и к ним применены стили
             </dd>
             <dt>Селекторы атрибутов</dt>
             <dd>
                 <pre><code>[atribute] {font-size: 20px;}</code></pre>
-                <pre><code>input[atribute] {font-size: 20px;}</code></pre> - будут выбраны все тэги, имеющие атрибут <code>atribute</code>, или все тэги <code>&lt;input&gt;</code>, имеющие атрибут <code>atribute</code>, и к ним применены стили
+                <pre><code>input[atribute] {font-size: 20px;}</code></pre> - будут выбраны все тэги, имеющие атрибут
+                <code>atribute</code>, или все тэги <code>&lt;input&gt;</code>, имеющие атрибут <code>atribute</code>, и
+                к ним применены стили
             </dd>
             <dt>Селекторы псевдоклассов</dt>
             <dd>
-                <pre><code>a:hover {color:green;}</code></pre> - при наведении мыши на любую ссылку <code>&lt;a&gt;</code> будут применены стили
+                <pre><code>a:hover {color:green;}</code></pre> - при наведении мыши на любую ссылку
+                <code>&lt;a&gt;</code> будут применены стили
             </dd>
             <dt>Селекторы псевдоэлементов</dt>
             <dd>
-                <pre><code>p::first-child{color: red;}</code></pre> - будет выбран первый тэг <code>&lt;p&gt;</code> в материнском тэге и к нему применены стили
+                <pre><code>p::first-child{color: red;}</code></pre> - будет выбран первый тэг <code>&lt;p&gt;</code> в
+                материнском тэге и к нему применены стили
             </dd>
-
-
-            <h1>Вася</h1>
-            <p>Петя</p>
-            <p>Гриша</p>
+            <h2>Практика</h2>
+            <div class="block_practice">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text text-alert">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text" id="text_id">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text text-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text text-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text text-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text text-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </dl>
     </main>
     <footer>
