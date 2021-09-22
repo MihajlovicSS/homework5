@@ -1,0 +1,7 @@
+.list_descriptions dt{
+    font-size: 24px;
+    font-weight: 700;
+}
+.list_descriptions dd{
+    margin-bottom: 10px;
+}
